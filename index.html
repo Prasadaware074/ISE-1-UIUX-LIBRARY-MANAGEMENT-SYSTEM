@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WIT Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Walchand Institute Of Technology</h1>
+        <h3>Library Section</h3>
+    </div>
+    <div class="main">
+
+        <h4>About:</h>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus voluptas natus dolorem veritatis commodi, nam, nobis amet cum soluta vero nulla temporibus quia eligendi quam deleniti iusto nesciunt quos? Corporis.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores libero fuga architecto fugit fugiat eum aperiam ipsum sequi eveniet temporibus quisquam nihil, cupiditate natus at perspiciatis excepturi? Consequuntur, quisquam optio.
+        </p>
+        <div>
+            <h4>Rules:</h4>
+            <ol>
+                <li>Books shall be in good condition.</li>
+                <li>Books shall be Returned within a week after borrowing.</li>
+                <li>Penalty will be applied if not Returned on time.</li>
+            </ol>
+        </div>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search by title or author...">
+            <button id="clearSearch">Clear</button>
+        </div>
+        <button id="listBtn">Show All Books</button>
+        <div id="listOfBooks">
+            <table id="bookTable" style="display: none;">
+                <thead>
+                    <tr>
+                        <th>Sr</th>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Genre</th>
+                        <th>Pages</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="bookTableBody"></tbody>
+            </table>
+            <p id="noBooksMsg" style="display: none;">No books found.</p>
+        </div>
+        <div id="message"></div>
+
+    </div>
+    <div class="footer">
+        WIT Solapur &copy;
+    </div>
+     
+</body>
+<script src="app.js"></script>
+</html>
